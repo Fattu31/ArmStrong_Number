@@ -1,0 +1,29 @@
+//Its a Pronic Number Program. A number that is the product of two consecutive integers.
+import java.util.Scanner;
+class Pronic
+{
+  public static void main(String[]args)
+  {
+         Scanner fr=new Scanner(System.in);
+         System.out.println("Enter your pronic number:");
+         int num=fr.nextInt();
+         int count=0;
+         for(int i=1;i<=num;i++)
+         {
+              int product=(i*(i+1));
+              if(product==num)
+              {
+                  count++;
+                  break;
+              }
+         }
+              if(count>0)
+              {
+                 System.out.println("It Is Pronic Number:"+num);
+              }
+              else
+              {
+                 System.out.println("It Is Not Pronic Number:"+num);
+              }
+  }
+}
