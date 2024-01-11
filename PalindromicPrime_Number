@@ -1,0 +1,37 @@
+//Its a Palindrome Prime Number. A number said to be Palindromic prime if the number is a palindrome as well as prime.
+import java.util.Scanner;
+class PrimePalindrome
+{
+   public static void main(String[]args)
+   {
+       Scanner fr=new Scanner(System.in);
+       System.out.println("Enter your number to check it is PrimePalindrom or not:");
+        int a=fr.nextInt();
+        int b=a;
+        int c=0;
+        int c1=c;
+        int s=0;
+        for(int i=1;i<=b;i++)
+        {
+            if(b%i==0)
+            {
+               c++;
+            }
+        }
+            while(a>0)
+            {
+                int rem=a%10;
+                s=s*10+rem;
+                a=a/10;
+            }
+            if(b==s&&c==2)
+            {
+                System.out.println("its a PrimePalindrome number");
+            }
+            else
+            {
+                System.out.println("Its not a PrimePalindrome number");
+            }
+
+   }
+}
