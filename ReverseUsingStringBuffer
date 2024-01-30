@@ -1,0 +1,22 @@
+package practice;
+
+public class Reverse12 {
+  public static void main(String[] args) {
+	  Reverse12 ref=new Reverse12();
+		 int start=100;
+		 int end=300;
+		 for(int a=start;a<=end;a++)
+		 {
+			 System.out.println(ref.rev_Num(a));
+		 }
+}
+  int rev_Num(int a)
+  {
+	  String value=a+"";
+	  StringBuffer ref=new StringBuffer(value);
+	  String value1=ref.reverse().toString();
+	  Integer ref1=new Integer(value1);
+	  int result=ref1.intValue();
+	  return result;
+  }
+}
